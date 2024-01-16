@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>lab_2 - Samarov_Ilya web</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Samarov_Ilya web</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../lab_1/" class="nav-link">lab_1</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">lab_2</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../lab_3/" class="nav-link">lab_3</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../3_1/" class="nav-link">prac_3_1</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../lab_4/" class="nav-link">lab_4</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../lab_1/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../lab_3/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">Описание моделей</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#hotel" class="nav-link">Hotel (Отели)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#room" class="nav-link">Room(номера)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#customer" class="nav-link">Customer(посетители)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#booking" class="nav-link">Booking(бронирования)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#review" class="nav-link">Review(отзывы)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_2" class="nav-link">Формы</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#bookingform" class="nav-link">BookingForm</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#editbookingform" class="nav-link">EditBookingForm</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#createuserform" class="nav-link">CreateUserForm</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#customerform" class="nav-link">CustomerForm</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#reviewform" class="nav-link">ReviewForm</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_3" class="nav-link">Роутер</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#lab2urlspy" class="nav-link">lab2/urls.py</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hotelsurlspy" class="nav-link">hotels/urls.py</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">Описание моделей</h1>
+<hr />
+<p><br></p>
+<h2 id="hotel"><em>Hotel (Отели)</em></h2>
+<p><br></p>
+<p>Модель <strong><em>Hotel</em></strong> представляет отель и содержит следующие поля: <br>
+- <strong>name (название):</strong> CharField с максимальной длиной 200 символов, используется для хранения названия 
+отеля. <br/>
+- <strong>address (адрес):</strong> CharField с максимальной 
+длиной 200 символов, используется для хранения адреса отеля. <br/>
+- <strong>website (вебсайт):</strong> CharField с максимальной 
+длиной 200 символов, используется для хранения вебсайта отеля. <br/>
+- <strong>phone (тел.номер):</strong> PhoneNumberField, используется 
+для хранения телефонного номера отеля. <br/>
+- <strong>owner (владелец):</strong> CharField с максимальной длиной 200 символов, используется 
+для хранения информации о владельце отеля. <br/>
+- <strong>rating (рейтинг):</strong>  FloatField, используется для хранения рейтинга отеля.<br/>
+- <strong>small_description (краткое описание):</strong> CharField с максимальной длиной 400 символов, используется 
+для хранения краткого описания отеля. <br/>
+- <strong>full_description (подробное описание):</strong> TextField, используется 
+для хранения подробного описания отеля. <br/>
+- <strong>image (картинка):</strong>  ImageField, используется для хранения фотографии отеля. <br/>
+- <strong>date_created (дата создания):</strong>  DateTimeField, используется для хранения информации о дате добавления отеля.
+<br><br></p>
+<h2 id="room"><em>Room(номера)</em></h2>
+<p><br>
+Модель <strong><em>Room</em></strong> представляет отель и содержит следующие поля: <br/>
+- <strong>hotel (отель):</strong> ForeignKey с ссылкой на модель <em>Hotel</em>, используется для связи номера с соответствующим отелем <br/>
+- <strong>category (категория):</strong> CharField с максимальной длиной 200 символов, используется 
+для хранения информации о категории номера. <br/>
+- <strong>price (стоимость):</strong> FloatField, используется 
+для хранения информации о стоимости номера. <br/>
+- <strong>amenities (удобства):</strong> TextField, используется 
+для хранения информации о удобствах, предоставляемых в номере. <br/>
+- <strong>image (картинка):</strong>  ImageField, используется для хранения фотографии номера. <br/>
+- <strong>date_created (дата создания):</strong>  DateTimeField, используется для хранения информации о дате добавления номера.
+<br><br></p>
+<h2 id="customer"><em>Customer(посетители)</em></h2>
+<p><br></p>
+<p>Модель <strong><em>Customer</em></strong> представляет отель и содержит следующие поля: <br/>
+- <strong>user (пользователь):</strong>  OneToOneField с ассоциацией с <em>User</em>, используется для хранения информации о посетителе. <br/>
+- <strong>name (имя):</strong> CharField с максимальной длиной 200 символов, используется 
+для хранения имени посетителе. <br/>
+- <strong>email:</strong> CharField с максимальной длиной 200 символов, используется 
+для хранения электронной почты посетителя. <br/>
+- <strong>phone (тел.номер):</strong> CharField с максимальной длиной 200 символов, используется 
+для хранения телефонного номера отеля. <br/>
+- <strong>image (картинка):</strong>  ImageField, используется для хранения фотографии номера. <br/>
+- <strong>date_registered (дата создания):</strong>  DateTimeField, используется для хранения информации о дате регистации посетителя.
+<br><br></p>
+<h2 id="booking"><em>Booking(бронирования)</em></h2>
+<p><br></p>
+<p>Модель <strong><em>Booking</em></strong> представляет бронирование и содержит следующие поля: <br/>
+- <strong>user (пользователь):</strong> ForeignKey с ссылкой на модель <em>Customer</em>, используется для связи брони с соответствующим пользователем <br/>
+- <strong>room (номер):</strong> ForeignKey с ссылкой на модель <em>Room</em>, используется для связи брони с соответствующим номером <br/>
+- <strong>status (статус):</strong> CharField с максимальной длиной 200 символов, используется 
+для хранения статуса бронирования. <br/>
+- <strong>check_in_date (дата заселения):</strong>  DateTimeField, используется для хранения информации о дате заселения.
+- <strong>check_out_date (дата выселения):</strong>  DateTimeField, используется для хранения информации о дате выселения.
+<br><br></p>
+<h2 id="review"><em>Review(отзывы)</em></h2>
+<p><br></p>
+<ul>
+<li><strong>booking (пользователь):</strong>  OneToOneField с ассоциацией с <em>Booking</em>, используется для хранения информации о бронировании. <br/></li>
+<li><strong>rating (рейтинг):</strong> PositiveIntegerField, используется для хранения оценки. <br/></li>
+<li><strong>comment (комментарий):</strong> TextField, используется для хранения текста отзыва. <br/></li>
+<li><strong>date_created (дата создания):</strong>  DateTimeField, используется для хранения информации о дате добавления отзыва.</li>
+</ul>
+<h1 id="_2"><em>Формы</em></h1>
+<hr />
+<p><br/></p>
+<h2 id="bookingform"><em>BookingForm</em></h2>
+<p><br/></p>
+<p>Класс <strong>BookingForm</strong> является формой для модели <strong>Booking</strong>. <br/>
+Он наследует от <strong>ModelForm</strong> и определяет следующие поля: <br/>
+- <strong>check_in_date</strong> (дата заселения) <br/>
+- <strong>check_in_date</strong> (дата выселения) <br/>
+<br><br></p>
+<h2 id="editbookingform"><em>EditBookingForm</em></h2>
+<p><br/></p>
+<p>Класс <strong>EditBookingForm</strong> является формой для модели <strong>Booking</strong>. <br/>
+Он наследует от <strong>forms.ModelForm</strong> и определяет следующие поля: <br/>
+- <strong>check_in_date</strong> (дата заселения) <br/>
+- <strong>check_in_date</strong> (дата выселения) <br/>
+<br><br></p>
+<h2 id="createuserform"><em>CreateUserForm</em></h2>
+<p><br/></p>
+<p>Класс <strong>CreateUserForm</strong> является формой для модели <strong>User</strong>. <br/>
+Он наследует от <strong>UserCreationForm</strong> и определяет следующие поля: <br/>
+- <strong>username</strong> <br/>
+- <strong>email</strong> <br/>
+- <strong>password1</strong> <br/>
+- <strong>password2</strong> <br/>
+<br><br></p>
+<h2 id="customerform"><em>CustomerForm</em></h2>
+<p><br/></p>
+<p>Класс <strong>CustomerForm</strong> является формой для модели <strong>Customer</strong>. <br/>
+Он наследует от <strong>ModelForm</strong> и определяет следующие поля: <br/>
+- <strong>name</strong> (имя): <br/>
+- <strong>email:</strong> <br/>
+- <strong>phone</strong> (тел.номер): <br/>
+- <strong>image</strong> (картинка): <br/>
+- <strong>date_registered</strong> (дата создания):<br/>
+<br><br></p>
+<h2 id="reviewform"><em>ReviewForm</em></h2>
+<p><br/></p>
+<p>Класс <strong>ReviewForm</strong> является формой для модели <strong>Review</strong>. <br/>
+Он наследует от <strong>ModelForm</strong> и определяет следующие поля: <br/>
+- <strong>rating</strong> (рейтинг)<br/>
+- <strong>comment</strong> (комментарий)<br/>
+- <strong>date_created</strong> (дата создания)
+<br><br></p>
+<h1 id="_3">Роутер</h1>
+<p><br/></p>
+<h2 id="lab2urlspy">lab2/urls.py</h2>
+<p><br/></p>
+<pre><code class="language-python">from django.contrib import admin
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('hotels.urls')),
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+</code></pre>
+<p><br/></p>
+<h2 id="hotelsurlspy">hotels/urls.py</h2>
+<p><br/></p>
+<pre><code class="language-python">from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('register/', views.registerPage, name='register'),
+    path('login/', views.loginPage, name='login'),
+    path('logout/', views.logoutUser, name=&quot;logout&quot;),
+    path('', views.home, name='home'),
+    path('hotels/', views.hotels, name='hotels'),
+    path('profile/', views.profile, name='profile'),
+    path('update_profile/', views.update_profile, name='update_profile'),
+    path('hotelpage/&lt;str:hotel_name&gt;/', views.hotelpage, name='hotelpage'),
+    path('booking/&lt;str:hotel_name&gt;/&lt;str:room_category&gt;/', views.booking, name='booking'),
+    path('editbooking/&lt;str:booking_id&gt;/', views.edit_booking, name='edit_booking'),
+    path('cancelbooking/&lt;str:booking_id&gt;/', views.cancel_booking, name='cancel_booking'),
+    path('review/&lt;str:booking_id&gt;/', views.review, name='review'),
+]
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -255,7 +255,7 @@ print(licence)
 <p><br></p>
 <h2 id="_5">Выведем всех владельцев черных машин</h2>
 <p><br></p>
-<pre><code class="language-python">qs = Car.objects.filter(color='black')
+<pre><code class="language-python">qs = Owner.objects.filter(cars__car__color = 'black')
 print(qs)
 </code></pre>
 <p><br></p>
@@ -287,9 +287,10 @@ for count in counts:
 <p><br></p>
 <h2 id="_8">Отсортируем всех автовладельцев по дате выдачи удостоверения</h2>
 <p><br></p>
-<pre><code class="language-python">qs = CarOwning.objects.order_by(&quot;licences__date_given&quot;)
+<pre><code class="language-python">qs = Owner.objects.all().order_by('licences__date_given')
 print(qs)
 </code></pre>
+<p><br></p>
 <h2 id="_9">Подсчитаем количество машин каждой марки</h2>
 <p>Car.objects.values("brand").annotate(Count("id"))</p></div>
             </div>

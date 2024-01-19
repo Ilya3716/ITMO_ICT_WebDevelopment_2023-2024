@@ -145,6 +145,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#_9" class="nav-link">Подсчитаем количество машин каждой марки</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -283,9 +287,11 @@ for count in counts:
 <p><br></p>
 <h2 id="_8">Отсортируем всех автовладельцев по дате выдачи удостоверения</h2>
 <p><br></p>
-<pre><code class="language-python">qs = License.objects.order_by(&quot;date_given&quot;)
+<pre><code class="language-python">qs = CarOwning.objects.order_by(&quot;licences__date_given&quot;)
 print(qs)
-</code></pre></div>
+</code></pre>
+<h2 id="_9">Подсчитаем количество машин каждой марки</h2>
+<p>Car.objects.values("brand").annotate(Count("id"))</p></div>
             </div>
         </div>
 
